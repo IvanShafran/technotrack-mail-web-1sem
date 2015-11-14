@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>MIPT Overflow</title>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet"/>
+    <link href="zero_level.css" rel="stylesheet"/>
+  </head>
+
+  <body>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">MIPT overflow</a>
+        </div>
+        
+        <div class="collapse navbar-collapse">
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-success">Поиск</button>
+          </form>
+
+          <form class="navbar-form navbar-left" role="search">
+            <button type="submit" class="btn btn-success">Спросить</button>
+          </form>
+
+          <ul class="nav nav-pills pull-right">
+            <li class="active"><img class="user-small-icon" src="http://avaqip.ru/img/2009/001/qip-avatars-001.gif"/></li>
+            <li><a href="#">UserName</a></li>
+            <li><a href="#">Настройки</a></li>
+            <li><a href="#">Выйти</a></li>
+          </ul>
+        </div>
+      </div><!--/.nav-collapse -->
+    </div>
+
+    <!--Main-->
+        <div class="container">
+        <div class="row">
+            <div class="col-sm-8 blog-main">
+              <div class="panel">
+                <div class="panel-heading">
+                    <a href="#" active><h2>How to use my mind?</h2></a>
+                </div>
+                <div class="panel-body">
+                  <div class="col-sm-1">
+                    <h1>10</h1>
+                  </div>
+                  <div class="col-sm-1">
+                    <button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                    <button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span></button>
+                  </div>
+                  <div class="col-sm-2">
+                    <img class="user-big-icon" src="http://avaqip.ru/img/2009/001/qip-avatars-001.gif">
+                  </div>
+                  <div class="col-sm-7">
+                    <p>Drag file from application to explorer. Can my application do the copying?</p>
+                   
+                    <div class="col-sm-4">
+                        <a href="#">Answers 5</a>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <a>Tags:</a>
+                    </div>
+
+                    <div class="col-sm-5">
+                        <a href="#" class="panel panel-success">wtf</a>
+                        <a href="#" class="panel panel-success">mind</a>
+                        <a href="#" class="panel panel-success">help</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                    <a href="#" active><h4>Angry rabbit:</h4></a>
+                </div>
+                <div class="panel-body">
+                  <div class="col-sm-1">
+                    <h1>5</h1>
+                  </div>
+                  <div class="col-sm-1">
+                    <button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                    <button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span></button>
+                  </div>
+                  <div class="col-sm-2">
+                    <img class="user-big-icon" src="http://avaqip.ru/img/2009/001/qip-avatars-001.gif">
+                  </div>
+                  <div class="col-sm-7">
+                    <p>You must delete system32 folder</p>
+                   
+                    <div class="col-sm-4">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> Correct!
+                          </label>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <div class="col-xs-12">
+                    <textarea rows="5" class="form-control" id="question-answer" placeholder="Answer"></textarea>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="col-xs-12">
+                    <input type="submit" class="btn btn-primary" value="Ответить">
+                  </div>
+                </div>
+              </form>
+
+
+
+            </div>
+               
+            <div id="right-panel" class="col-sm-3 col-sm-offset-1 blog-sidebar">
+                 <div class="side-bar-module" id="populartags">
+                    <h4>Popular Tags</h4>
+                    <a href="#" class="panel panel-success">C</a>
+                    <a href="#" class="panel panel-success">nginx</a>
+                    <a href="#" class="panel panel-success">math</a>
+                    <a href="#" class="panel panel-success">Breaking Bad</a>
+                    <a href="#" class="panel panel-success">Forest</a>
+                    <a href="#" class="panel panel-success">gunicorn</a>
+                    <a href="#" class="panel panel-success">Star Wars</a>
+                </div>
+                <div class="side-bar-module" id="popular-members">
+                    <h4>Best Members</h4>
+                    <ol id="popular-members-list">
+                        <li><a href="#" class="panel panel-primary">Che</a></li>
+                        <li><a href="#" class="panel panel-primary">Against</a></li>
+                        <li><a href="#" class="panel panel-primary">Me</a></li>
+                        <li><a href="#" class="panel panel-primary">False</a></li>
+                        <li><a href="#" class="panel panel-primary">Flags</a></li>                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer-->
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted">MIPT overflow 2015-2015
+          <address class="text-muted">
+            <strong>Ivan Shafran: </strong>
+            <a href="mailto:#">vanobox07@mail.ru</a>
+          </address>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
