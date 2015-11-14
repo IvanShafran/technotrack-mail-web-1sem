@@ -38,7 +38,11 @@
           <ul class="nav nav-pills pull-right">
           {% if user.is_authenticated %}
             <li class="active"><img class="user-small-icon" src="http://avaqip.ru/img/2009/001/qip-avatars-001.gif"/></li>
-            <li><a href="#">{{ user.username }}</a></li>
+            {% if user.username %}
+              <li><a href="#">{{ user.username }}</a></li>
+            {% else %}
+              <li><a href="#">Здесь мог быть ваш username</a></li>
+            {% endif %}
             <li><a href="#">Настройки</a></li>
             <li><a href="{% url 'django.contrib.auth.views.logout' %}?next={{request.path}}">Выйти</a></li>
           {% else %}
